@@ -19,7 +19,7 @@ df=pd.read_csv('単語帳.csv')
 num=random.randint(0,126)
 
 def main(count):
-    USER_ID=info['USER_ID']
+    USER_ID="tomomisato0614"
     messages=TextSendMessage(text=df['単語'][count]+' : '+df['意味'][count])
     line_bot_api.push_message(USER_ID,messages=messages)
     
